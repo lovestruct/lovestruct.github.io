@@ -1,16 +1,95 @@
 <html>
 <head>
   <title>Struct</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Spectral:500,700" rel="stylesheet">
   <style>
-    h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      padding: 20px;
+    }
+
+    body {
+      font-family: 'Spectral', serif;
+      font-size: 28px;
+      color: #0F2133;
+    }
+
+    strong {
       font-weight: bold;
-      font-size: 22px;
-      color: #333339;
+    }
+
+    em {
+      font-weight: bold;
+      color: #FF0076;
+      font-style: normal;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    main {
+      margin: 50px auto 0;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    aside {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 850px) {
+      main {
+        margin: 100px 5% 25px;
+        width: 40%;
+        max-width: 480px;
+        float: right;
+      }
+
+      aside {
+        margin: 50px 0 25px;
+        width: 50%;
+        float: right;
+      }
+    }
+
+    @media only screen and (min-width: 1100px) {
+      main {
+        margin: 200px 4.1666667% 25px;
+        width: 33.3333333%;
+        float: right;
+      }
+
+      aside {
+        margin: 0;
+        width: 58.3333338%;
+        float: right;
+      }
+    }
+
+    aside img {
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>{struct} will be with you shortly</h1>
+  <div class="container">
+    <aside>
+      <img src="assets/make_people_awesome.svg" />
+    </aside>
+    <main>
+      <div class="logo"><img src="assets/struct_wm.svg" /></div>
+      <p><strong>struct</strong> is on a mission to <em>make people awesome</em>. We aren’t currently accepting new projects but some day we’d love to help make your teams, customers, and users  awesome.</p>
+    </main>
+  </div>
 </body>
 </html>
